@@ -7,14 +7,15 @@
  */
 int main(void)
 {
-	char alp;
-	for (alp = 'a'; alp <= 'z'; alp++)
-	{
-		if (alp != 'e' && alp != 'q')
-			putchar(alp);
-	}
+	char c;
 
+	c = 'a';
+	while
+		(c <= 'z') {
+			if ((c != 'q' && c != 'e') && c <= 'z')
+				putchar(c);
+			c++;
+		}
 	putchar('\n');
-
 	return (0);
 }
