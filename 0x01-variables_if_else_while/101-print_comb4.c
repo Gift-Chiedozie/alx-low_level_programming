@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * prints all possible different combinations of three digits
+ * main - prints all possible different combinations of three digits
  *
  * Return: Always 0 (Success)
  */
@@ -24,15 +24,16 @@ int main(void)
 					putchar(hundreds);
 					putchar(tens);
 					putchar(ones);
-					if (!(ones == '9' && huncreds == '7' && tens == '8')) /* adds spaces and commas*/
+					if (!(ones == '9' && hundreds == '7' && tens == '8')) /* adds spaces and commas*/
 					{
 						putchar(',');
-						puthar(' ');
+						putchar(' ');
 					}
 				}
 			}
 		}
 	}
 	putchar('\n');
+
 	return (0);
 }
