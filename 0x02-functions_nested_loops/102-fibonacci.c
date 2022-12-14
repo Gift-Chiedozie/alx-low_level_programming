@@ -28,5 +28,5 @@ int main(void)
 		k = next;
 	}
 
-	returm(0);
+	return(0);
 }
