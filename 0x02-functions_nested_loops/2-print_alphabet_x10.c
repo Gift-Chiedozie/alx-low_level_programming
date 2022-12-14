@@ -16,7 +16,7 @@ void print_alphabet_x10(void)
 		c++;
 		if (c < 10)
 		{
-			_print_alphabet_x10(c);
+			print_alphabet_x10(c);
 			c++;
 		}
 	}
