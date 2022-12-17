@@ -1,19 +1,21 @@
-#include "main.h"
+#include <stdlib.h>
 #include <stdio.h>
 
 /**
- * fizz_buzz - prints to 100
+ * main - prints to 100
  * Return: Always 0 (Success)
  */
 
-void fizz_buzz(void)
+int main(void)
 {
 	int x;
 
 	for (x = 1; x <= 100; x++)
 	{
+		if (x == 0)
+			_putchar("Buzz");
 		if (x % 3 == 0 && x % 5 == 0)
-			printf("Fizzbuz ");
+			printf("Fizzbuzz ");
 		else if (x % 3 == 0)
 			printf("Fizz ");
 		else if (x % 5 == 0)
