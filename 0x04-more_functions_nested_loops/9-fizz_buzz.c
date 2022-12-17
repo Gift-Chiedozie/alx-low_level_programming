@@ -15,7 +15,7 @@ int main(void)
 		if (x == 0)
 			_putchar("Buzz");
 		if (x % 3 == 0 && x % 5 == 0)
-			printf("Fizzbuzz ");
+			printf("FizzBuzz ");
 		else if (x % 3 == 0)
 			printf("Fizz ");
 		else if (x % 5 == 0)
