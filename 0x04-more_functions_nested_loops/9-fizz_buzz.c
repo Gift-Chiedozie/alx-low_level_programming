@@ -22,7 +22,7 @@ int main(void)
 		else if (x % 3 == 0)
 			printf("%s ", f);
 		else if (x % 5 == 0)
-			printf("%s "), b;
+			printf("%s ", b);
 		else
 			printf("%d ", x);
 	}
