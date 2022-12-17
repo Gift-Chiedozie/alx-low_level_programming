@@ -3,12 +3,11 @@
 /**
  * print_line - Prints line
  * @n: a parameter
- * Return: success
  */
 
 void print_line(int n)
 {
-	int i
+	int i;
 
 	if (n <= 0)
 		_putchar('\n');
