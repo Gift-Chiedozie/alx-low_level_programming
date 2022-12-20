@@ -3,8 +3,7 @@
 
 /**
  * reset_to_98 - resets the integer to from its former value to 98
- * @n - parameter to reset
- * return: always 0
+ * @n: updates pointer n
  */
 
 void reset_to_98(int *n)
