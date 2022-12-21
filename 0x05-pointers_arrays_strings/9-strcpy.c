@@ -2,20 +2,23 @@
 #include <string.h>
 
 /**
- * *strcpy - Prints the copy of stings into chars
+ * _strcpy - Prints the copy of stings into chars
  * @dest: parameter 1
- * @str: parameter 2
+ * @src: parameter 2
  * Return: dest as the value
  */
 
-char *strcpy(char *dest, const char *str)
+char *_strcpy(char *dest, char *src)
 {
-	size_t a, b;
+	char *a = dest;
 
-	for (b = 0; b < a && src[b] != '\0'; b++)
-		dest[b] = src[b];
-	for ( ; b < a; b++)
-		dest[b] = '\0';
+	while (*src != '\0')
+	{
+		*dest = *src;
+		dest++;
+		src++;
+	}
+	*dest = '\0';
 
-	return (dest);
+	return (a);
 }
