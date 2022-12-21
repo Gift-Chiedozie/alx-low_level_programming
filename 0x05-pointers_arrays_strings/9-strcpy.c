@@ -2,26 +2,20 @@
 #include <string.h>
 
 /**
- * _strcpy - Copies the value of one char to another
+ * *strcpy - Prints the copy of stings into chars
  * @dest: parameter 1
- * @src: parameter 2
- * Return: value should be dest
+ * @str: parameter 2
+ * Return: dest as the value
  */
 
-char *_strcpy(char *dest, char *src)
+char *strcpy(char *dest, const *str)
 {
-	if (!dest || !src)
-	{
-		return NULL;
-	}
+	size_t a, b;
 
-	char *p = dest;
+	for (b = 0; b < a && src[b] != '\0'; b++)
+		dest[i] = src[i];
+	for ( ; i < n; i++)
+		dest[i] = '\0';
 
-	while (*src)
-	{
-		*dest++ = *src++;
-	}
-	*dest = '\0';
-
-	return (p);
+	return (dest);
 }
