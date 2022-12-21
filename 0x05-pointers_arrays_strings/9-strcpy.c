@@ -8,14 +8,14 @@
  * Return: dest as the value
  */
 
-char *strcpy(char *dest, const *str)
+char *strcpy(char *dest, const char *str)
 {
 	size_t a, b;
 
 	for (b = 0; b < a && src[b] != '\0'; b++)
-		dest[i] = src[i];
-	for ( ; i < n; i++)
-		dest[i] = '\0';
+		dest[b] = src[b];
+	for ( ; b < a; b++)
+		dest[b] = '\0';
 
 	return (dest);
 }
