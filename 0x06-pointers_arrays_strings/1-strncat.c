@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strcat - concatenates the value of a astring
- *  @dest: string to be appended
- *  @src: string to be concatenated
- *  Return: returns the pointer to @dest
+ * *_strcat - concatenates the value of a astring
+ * @dest: string to be appended
+ * @src: string to be concatenated
+ * Return: returns the pointer to @dest
  */
 
 char *_strcat(char *dest, char *src)
