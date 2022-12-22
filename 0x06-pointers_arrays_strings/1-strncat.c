@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * *_strcat - concatenates the value of a astring
@@ -18,5 +17,6 @@ char *_strcat(char *dest, char *src, int n)
 
 	for (index = 0; src[index] && index < n; index++)
 		dest[dest_len++] = src[index];
+
 	return (dest);
 }
