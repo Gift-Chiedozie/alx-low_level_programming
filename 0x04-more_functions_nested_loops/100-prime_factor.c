@@ -2,20 +2,22 @@
 
 /**
  * main - Entry point
+ *
  * Return: Always 0.
  */
 
 int main(void)
-{
-	long a, b;
 
-	a = 612852475143;
-	for (b = 2; b < n; b++)
+{
+	long n, i;
+
+	n = 612852475143;
+	for (i = 2; i < n; i++)
 	{
-		while (a % b == 0)
-			a = a / b;
+	while (n % i == 0)
+		n = n / i;
 	}
-	printf("%lu\n", a);
+	printf("%lu\n", n);
 
 	return (0);
 }
