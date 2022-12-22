@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * *_strcat - concatenates the value of a astring
+ * *_strncat - concatenates the value of a astring
  * @dest: string to be appended
  * @src: string to be concatenated
  * @n: integer parameter to compare with
  * Return: returns a new string
  */
 
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int index = 0, dest_len = 0;
 
