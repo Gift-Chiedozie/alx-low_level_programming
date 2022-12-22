@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * *_strcat - concatenates the value of a astring
