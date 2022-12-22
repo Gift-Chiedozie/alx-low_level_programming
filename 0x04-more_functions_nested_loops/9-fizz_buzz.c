@@ -1,33 +1,40 @@
-#include <stdlib.h>
 #include <stdio.h>
 
 /**
  * main - prints to 100
- * Return: Always 0 (Success)
+ * Return: void
  */
 
 int main(void)
 {
-	int x;
-	char f[] = "Fizz";
-	char b[] = "Buzz";
-	char fb[] = "FizzBuzz";
+	int x = 100;
+	int y;
 
-	for (x = 1; x <= 100; x++)
+	y = 1;
+	while (y <= x)
 	{
-		if (x == 100)
-			printf("%s ", b);
-		else if ((x % 3 == 0) && (x % 5 == 0))
-			printf("%s ", fb);
-		else if (x % 3 == 0)
-			printf("%s ", f);
-		else if (x % 5 == 0)
-			printf("%s ", b);
+		if (y % 3 == 0 && y % 5 == 0)
+		{
+			printf("FizzBuzz ");
+		}
+		else if (y % 3 == 0)
+		{
+			printf("Fizz ");
+		}
+		else if (y % 5 == 0)
+		{
+			if (y < x)
+			printf("Buzz ");
+
 		else
-			printf("%d ", x);
+			printf("Buzz");
+		}
+		else
+		{
+			printf("%i ", y);
+		}
+		y++;
 	}
-
 	printf("\n");
-
 	return (0);
 }
