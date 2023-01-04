@@ -2,9 +2,9 @@
 #include <string.h>
 
 /**
- * _memset - Fills the first set of n bytes of the memory area
+ * *_memset - Fills the first set of n bytes of the memory area
  * pointed to by @s with the constant byte @c.
- * @s: A pointer to the memory area to be filled.
+ * @*s: A pointer to the memory area to be filled.
  * @b: The character to fill the memory area with.
  * @n: The number of bytes to be filled.
  * description _memset: over there.
