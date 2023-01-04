@@ -1,12 +1,11 @@
-#include "mian.h"
+#include "main.h"
 
 /**
  * _memcpy - copies n bytes from memory area to dest
- * @dest: A character
- * @src: Another character
- * @n: An unsigned integer
- *
- * Return: String
+ * @dest: is destination memory
+ * @src: is source memory
+ * @n: number of bytes to copied
+ * Return: String copied from source
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
