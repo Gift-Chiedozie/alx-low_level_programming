@@ -2,23 +2,20 @@
 
 /**
  * _strchr - String character
- * @s: another string character
- * @c: and another string character
+ * @s: string character given
+ * @c: another string character
  *
  * Return: Returns a pointer to the first occurrence of the character
  */
 
 char *_strchr(char *s, char c)
 {
-	int index = 0, b;
+	int index;
 
-	while (s[index])
-		index++;
-	for (b = 0; b < index; b++)
+	for (index = 0; s[index] >= '\0'; index++)
 	{
-		if (c == s[b])
-			s += b;
-		return (s);
+		if (s[index] == c)
+			return (s + index);
 	}
 	return ('\0');
 }
