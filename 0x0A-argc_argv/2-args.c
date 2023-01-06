@@ -6,7 +6,7 @@
  * @argc: Counts arguments
  * @argv: Arguments
  *
- *Return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(int argc, char *argv[])
@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 		/*WHILE - print eaach arguments*/
 		while (count < argc)
 		{
-			ptintf("%s\n", argv[count]);
+			printf("%s\n", argv[count]);
 			count++;
 		}
 	}
