@@ -2,7 +2,6 @@
 
 /**
  * main - writes a function that prints the name of current file
- * void: gives no real value
  *
  * Return: Always 0 (success)
  */
