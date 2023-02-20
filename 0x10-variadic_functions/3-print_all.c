@@ -29,22 +29,19 @@ void print_all(const char * const format, ...)
 					printf("%s%d", sep, va_arg(list, int));
 					break;
 				case 'f':
-					printf("%s%f", sep, va_arg(list, int));
+					printf("%s%d", sep, va_arg(list, int));
 					break;
 				case 's':
-					str = va_arg(list, char*);
-					if (!str)
+					str = va_arg(list, char *);
+					if (str == NULL)
 						str = "(nil)";
 					printf("%s%s", sep, str);
-				default:
-					i++;
-					continue;
 			}
 			sep = ", ";
 			i++;
 		}
 	}
 
-	print("\n");
+	printf("\n");
 	va_end(list);
 }
