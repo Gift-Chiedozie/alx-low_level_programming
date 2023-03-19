@@ -3,32 +3,20 @@
 #include "lists.h"
 
 /**
- * print_dlistint - writes a function that prints the number of elements
- * in a dlistint_t list
- * @h: the parameter useed to represent the head node
+ * size_t print_dlistint - writes a function that prints all the element of a list
+ * @h: parameter that represents the head node
  *
- * Return: number of nodes present in list.
+ * Return: the total number of nodes
  */
 
-struct node *print_dlistint(struct node *h)
+struct size_t print_dlistint(const dlistint_t *h)
 {
-	int node, data, i;
+	dlistint_t *ptr;
 
-	printf("Enter the number of nodes: ");
-	scanf("%d", &node);
-
-	if (node == 0)
-		return (h);
-
-	printf("Enter element for the node 1: ");
-	scanf("%d", &data);
-	h = dlistint_s(h, data);
-
-	for (i = 1; i < node; i++)
-	{
-		printf("Enter the element for the node %d: ", i + 1)
-		scanf("%d", &data);
-		h = dlistint_t(h, data);
-	}
-	return (h);
+	if (h == NULL)
+		printf("List is empty");
+	else
+		for(ptr = h; ptr != NULL; ptr = ptr->next)
+			printf("%d\n", ptr->data);
+	return(h);
 }
